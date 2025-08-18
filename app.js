@@ -590,7 +590,15 @@ class ButtonManager {
     }
 
     handleRegistration() {
-        this.showNotification('Registration form will open soon!', 'success');
+        /*this.showNotification('Registration form will open soon!', 'success');*/
+        //window.open('forms.html', '_blank');
+        // If we are already on forms.html, show a notification
+        if (window.location.pathname.includes("forms.html")) {
+            this.showNotification('Registration will open soon!', 'success');
+        } else {
+            // Otherwise (from index.html), open forms.html in new tab
+            window.open('forms.html', '_blank');
+        }
     }
 
     handleVideoPlay() {
