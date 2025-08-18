@@ -2237,15 +2237,17 @@ section {
 }
 
 .draft-banner {
+  
+  position: fixed;
+  top: 10px;
+  left: 10px;
   background: #f59e0b; /* orange shade */
-  color: rgb(0, 0, 0);
-  text-align: center;
-  font-weight: bold;
-  padding: 0.5rem;
-  position: sticky;
-  top: 0;
-  z-index: 9999;
-  opacity: 40%;
+   color: rgb(0, 0, 0);
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  border-radius: var(--radius-sm);
+  opacity: 0.75;   /* 50% opacity */
+  z-index: 9999;  /* stays on top */
 }
 
 
