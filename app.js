@@ -54,6 +54,10 @@ function initParticleSystem() {
       gradient.addColorStop(0, '#32b8c5');
       gradient.addColorStop(0.5, 'rgba(50,184,197,1)');
       gradient.addColorStop(1, 'rgba(50,184,197,0.5)');
+      //gradient.addColorStop(0, '#D4AF37');    // Classic gold
+      //gradient.addColorStop(0.5, '#B9972E');  // Darker gold
+      //gradient.addColorStop(1, '#F0D973');    // Light gold
+
       ctx.fillStyle = gradient;
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.size * 3, 0, Math.PI * 2);
@@ -69,7 +73,8 @@ function initParticleSystem() {
 
   // Responsive # of particles!
   function getCount() {
-    return Math.min(80, Math.floor(canvas.width * canvas.height / 12000));
+    //return Math.min(80, Math.floor(canvas.width * canvas.height / 12000));
+    return 25;
   }
 
   let particles = [];
@@ -112,7 +117,7 @@ function initParticleSystem() {
 // Theme Management
 class ThemeManager {
     constructor() {
-        this.currentTheme = localStorage.getItem('theme') || 'light';
+        this.currentTheme = localStorage.getItem('theme') || 'dark';
         this.init();
     }
 

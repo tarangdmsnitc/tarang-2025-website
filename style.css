@@ -746,9 +746,13 @@ select.form-control {
   --primary-color: #0D7377;
   --primary-hover: #0a5d61;
   --primary-light: #1a8a8f;
-  --accent-color: #FF6B35;
+  /*--accent-color: #FF6B35;
   --accent-hover: #e55a2e;
-  --accent-light: #ff7f4f;
+  --accent-light: #ff7f4f;*/
+  --accent-color: #D4AF37;   /* Classic gold */
+  --accent-hover: #B9972E;   /* Darker gold */
+  --accent-light: #F0D973;   /* Light gold */
+
   
   /* Background Colors */
   --bg-primary: #ffffff;
@@ -803,9 +807,13 @@ select.form-control {
   --primary-color: #64FFDA;
   --primary-hover: #4dd0ae;
   --primary-light: #7cffdd;
-  --accent-color: #FF7B54;
+  /*--accent-color: #FF7B54;
   --accent-hover: #e66b47;
-  --accent-light: #ff8a67;
+  --accent-light: #ff8a67;*/
+  --accent-color: #D4AF37;   /* Classic gold */
+  --accent-hover: #B9972E;   /* Darker gold */
+  --accent-light: #F0D973;   /* Light gold */
+
   
   --bg-primary: #0f172a;
   --bg-secondary: rgba(30, 41, 59, 0.5);
